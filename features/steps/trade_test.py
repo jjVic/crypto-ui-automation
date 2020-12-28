@@ -10,6 +10,8 @@ from features.pageObject.tradePO import TradePageObject
 def step_impl(context):
     try:
         context.exchange_page = ExchangePageObject(context.webdriver)
+        context.is_on_exchange_page = context.exchange_page.is_on_exchange_page()
+        assert context.is_on_exchange_page
         context.exchange_page.handle_cookie_alert()
     except Exception as e:
         traceback.print_exc()

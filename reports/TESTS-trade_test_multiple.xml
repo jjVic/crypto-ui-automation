@@ -1,0 +1,23 @@
+<testsuite name="trade_test_multiple.Trade coin pair" tests="1" errors="0" failures="0" skipped="0" time="1.956276" timestamp="2020-12-28T16:22:57.155750" hostname="DESKTOP-TPKGFPR"><testcase classname="trade_test_multiple.Trade coin pair" name="trade a coin pair -- @1.1 CRO Markets" status="passed" time="1.956276"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: trade a coin pair -- @1.1 CRO Markets
+    Given I am on Cypto Exchange page ... passed in 0.106s
+    And I choose my markets "CRO Markets" ... passed in 0.171s
+    When I click trade for a coin pair "ZIL/CRO" ... passed in 1.680s
+    Then I should see the coin pair trade page ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+16:22:24 : SELECTED MARKET:CRO Markets
+16:22:25 : SELECTED COIN PAIR:ZIL/CRO
+16:22:25 : source:ZIL
+16:22:25 : target:CRO
+16:22:25 : selected market:CRO
+16:22:26 : selected coin pair:ZIL/CRO
+16:22:26 : coin pair toggle text :ZIL/CRO
+
+]]>
+</system-out></testcase></testsuite>
